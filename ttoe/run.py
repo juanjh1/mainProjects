@@ -59,10 +59,7 @@ while running:
                             table.put_pice(x, y, current_pice[pice_in_game]) 
                             turn = current_pice[next_turn]
                             tie_conunter += 1; 
-                       
-                    table.print_table()
-                   
-                    print(tie_conunter)
+                                          
                     if table.validate_winner(XPice):
                         winer_img = XPICE_IMG
                         current_status = Status.WINNER
