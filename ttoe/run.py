@@ -17,7 +17,6 @@ turn_dict = {
 }
 
 
-
 WIDTH = 980
 HEIGTH = 620
 MAIN_RECT_WIDTH = 500
@@ -70,11 +69,9 @@ while running:
                          current_status = Status.WINNER
 
             if current_status == Status.MENU:
-                print(center_rects(WIDTH, 300) )
                 if center_rects(WIDTH, 300) < pos[cartesian_x] and (center_rects(WIDTH, 300) < pos[cartesian_x] and pos[cartesian_y] > 90 and pos[cartesian_y] < 150 + 90 ):
                     current_status = Status.INGAME
             if current_status == Status.WINNER:
-                print(center_rects(WIDTH, 300) )
                 if center_rects(WIDTH, 300) < pos[cartesian_x] and (center_rects(WIDTH, 300) < pos[cartesian_x] and pos[cartesian_y] > 90 and pos[cartesian_y] < 150 + 90 ):
                     current_status = Status.MENU
 
